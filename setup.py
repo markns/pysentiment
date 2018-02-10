@@ -8,12 +8,6 @@ setup(name='pysentiment',
       author='Zhichao HAN',
       author_email='hanzhichao@gmail.com',
       packages=['pysentiment'],
-      package_dir={'pysentiment': 'pysentiment'},
-      # package_data={'pysentiment': ['static/*.csv', 'static/*.txt']},
+      include_package_data=True,
       install_requires=['pandas >= 0.10',
-                        'nltk >= 2.0'],
-      data_files=[('pysentiment/static',
-                   ['pysentiment/static/%s' % e for e in [
-                        'HIV-4.csv', 'LM_2014.csv',
-                        'Currencies.txt', 'DatesandNumbers.txt',
-                        'Generic.txt', 'Geographic.txt', 'Names.txt']])])
+                        'nltk >= 2.0'])
