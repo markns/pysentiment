@@ -14,6 +14,6 @@ setup(name='pysentiment',
                         'nltk >= 2.0'],
       data_files=[('pysentiment/static',
                    ['pysentiment/static/%s' % e for e in [
-                        'HIV-4.csv', 'LM.csv',
+                        'HIV-4.csv', 'LM_2014.csv',
                         'Currencies.txt', 'DatesandNumbers.txt',
                         'Generic.txt', 'Geographic.txt', 'Names.txt']])])
